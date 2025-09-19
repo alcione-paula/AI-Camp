@@ -5,6 +5,7 @@ import requests
 # Dados de autenticação (NUNCA coloque a chave diretamente no código)
 REALM = "stackspot-freemium"
 CLIENT_ID = "0df9df5d-298f-4bb4-b0dc-36aa87bc7c6d"
+CLIENT_ID = os.getenv("CLIENT_ID")  # Defina no ambiente do Streamlit Cloud!
 CLIENT_SECRET = os.getenv("STACKSPOT_API_KEY")  # Defina no ambiente do Streamlit Cloud!
 AGENT_ID = "01K53XTZ9FEW05T54XPVNQ9SJ4"
 API_URL = f"https://genai-inference-app.stackspot.com/v1/agent/{AGENT_ID}/chat"
@@ -62,5 +63,6 @@ if st.button("💡 Gerar Mini Plano"):
                 st.markdown(f"<div style='background:#e0ffe0; border-radius:10px; padding:16px; color:#3b3b3b; font-size:1.08rem'>{resposta.replace(chr(10), '<br>')}</div>", unsafe_allow_html=True)
             except Exception as e:
                 st.error(f"Erro ao conectar com o agente: {e}")
+
 
 st.markdown("<div style='text-align:center; color:#b2bec3; margin-top:24px;'>Powered by StackSpot IA &copy; 2024</div>", unsafe_allow_html=True)
