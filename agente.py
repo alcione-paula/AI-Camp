@@ -4,7 +4,6 @@ import requests
 
 # Dados de autenticação (NUNCA coloque a chave diretamente no código)
 REALM = "stackspot-freemium"
-CLIENT_ID = "0df9df5d-298f-4bb4-b0dc-36aa87bc7c6d"
 CLIENT_ID = os.getenv("CLIENT_ID")  # Defina no ambiente do Streamlit Cloud!
 CLIENT_SECRET = os.getenv("STACKSPOT_API_KEY")  # Defina no ambiente do Streamlit Cloud!
 AGENT_ID = "01K53XTZ9FEW05T54XPVNQ9SJ4"
@@ -66,3 +65,4 @@ if st.button("💡 Gerar Mini Plano"):
 
 
 st.markdown("<div style='text-align:center; color:#b2bec3; margin-top:24px;'>Powered by StackSpot IA &copy; 2024</div>", unsafe_allow_html=True)
+
