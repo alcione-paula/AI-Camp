@@ -5,6 +5,9 @@ Este é um aplicativo web desenvolvido com **Python** e **Streamlit**, que utili
 👉 **Acesse o aplicativo online:**  
 🔗 [https://businessplancreator.streamlit.app/](https://businessplancreator.streamlit.app/)
 
+👉 **Acesse o video de treinamento de desenvolvimento:** 
+🔗 https://app.heygen.com/videos/cf446425f48248918d3d4af6d7cbd108
+
 ---
 
 ## 🧠 Como funciona
