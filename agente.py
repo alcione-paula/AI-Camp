@@ -6,7 +6,7 @@ import requests
 REALM = "stackspot-freemium"
 CLIENT_ID = os.getenv("CLIENT_ID")  # Defina no ambiente do Streamlit Cloud!
 CLIENT_SECRET = os.getenv("STACKSPOT_API_KEY")  # Defina no ambiente do Streamlit Cloud!
-AGENT_ID = "01K53XTZ9FEW05T54XPVNQ9SJ4"
+AGENT_ID = os.getenv("AGENT_ID")  # Defina no ambiente do Streamlit Cloud!
 API_URL = f"https://genai-inference-app.stackspot.com/v1/agent/{AGENT_ID}/chat"
 
 def obter_jwt():
@@ -65,4 +65,5 @@ if st.button("💡 Gerar Mini Plano"):
 
 
 st.markdown("<div style='text-align:center; color:#b2bec3; margin-top:24px;'>Powered by StackSpot IA &copy; 2024</div>", unsafe_allow_html=True)
+
 
